@@ -10,6 +10,9 @@ function validateNumber() {
         alert("Number not matched! Please try again.");
         return;
     }
+    else {
+        alert("you've recharge successfully");
+    }
     document.getElementById("disp").innerHTML = "succesful! "
    
 }
