@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body{
+        align-items: center;
+    }
+    #image-container {
+        text-align: center;
+    }
+    img {
+        max-width: 100%;
+        max-height: 400px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container mt-4">
+    <div id="image-container">
+        <img src="slide1.png" id="image-display" class="img-fluid">
+    </div>
+    <div class="text-center mt-3">
+        <button class="btn btn-primary mr-2" onclick="prevImage()">Previous</button>
+        <button class="btn btn-primary" onclick="nextImage()">Next</button>
+    </div>
+</div>
+
+   
+    
+
+
+<script>
+         
+
+
+    const images = ["slide1.png", "profile1.jfif", "profile2.jfif"];
+    let currentIndex = 0;
+    const imageDisplay = document.getElementById('image-display');
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage();
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateImage();
+    }
+
+    function updateImage() {
+        imageDisplay.src = images[currentIndex];
+    }
+
+
+
+
+
+    
+</script>
+
+</body>
+</html>

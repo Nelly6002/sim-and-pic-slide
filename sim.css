@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #032539;
+}
+.network{
+    border-radius: 5px;
+    background-color: transparent;
+    height: fit-content;
+    align-items: center;
+    text-align: center;
+background-color: rgb(239,243,251);
+height: 50px;
+width: 150px;
+}
+h2,h3{
+color: #1c768f;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+select{
+    color: #1c768f;
+    font-size: 14PX;
+    outline: #1c768f;
+    border: none;
+}
+.net{
+    margin-top: 200px;
+    margin-left: 350px;
+    width: 500px;
+    background-color: white;
+    border-radius: 5px;
+    border: solid #1c768f;
+    padding: 50px;
+   
+}
+.net button{
+    border-radius: 5px;
+    background-color: transparent;
+    height: fit-content;
+    background-color: rgb(239,243,251);
+    color: #1c768f;
+    font-size: 14PX;
+    outline: #1c768f;
+border:none;
+height: 50px;
+width: 150px;
+}
+.net button:hover{
+    cursor: pointer;
+    background-color: rgb(195, 199, 206);
+    font-size: 16px;
+}
+select:hover{
+    cursor: pointer;
+    background-color: rgb(195, 199, 206);
+}
+.inp{
+    border-radius: 5px;
+    background-color: rgb(239,243,251);
+    color: #1c768f;  
+    font-size: 16PX;
+border:none;
+height: 50px;
+width: 350px;
+}
+.inp:focus-within{
+    width: 460px;
+    transition: all 2s;
+}

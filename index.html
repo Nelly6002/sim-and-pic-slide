@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <button onclick="document.getElementById('dan').style.backgroundColor = 'green'">click me</button>
+    </main>
+    <div style="width: 200px; height: 200px; border: 1px solid grey;" id="dan"></div>
+    <button onclick="learnjs()">click2</button>
+    <button onclick="welcome()">welcome</button>
+    <button onclick="myname()"> my name</button>
+    <button onclick="callalert()">call alert</button>
+</body>
+</html>
+<script src="index.js"></script>
+<script>
+    function learnjs(){
+        document.getElementById("dan").innerHTML="I wrote something"
+    }
+    console.log(200*200)
+    
+    document.getElementById('dan').innerHTML = 20+20
+    
+    let name ="Etop";
+   
+    // (u can change this)
+    let my_name ="my name is " + name
+function myname(){
+    document.getElementById('dan').innerHTML = "my name is " + name
+}
+console.log(my_name)
+alert(my_name)
+function callalert(){
+    alert()
+}
+</script>
+<!-- type of data
+primitive( string eg "'foot'" undefined,null,boolean eg true or flase,symbol,number or integer)
+reference(object,array)
+string method
+concrtration name of code is "concat" is to add to string together
+length name of code is "concat"is to know the length 'space' of the character .length
+NUMBERS
+num.tostring() is to change a num to a string
+dec.tofixed is to change a decimal num to round up eg 30.565 will be 31 u can also specify it eg dec.tofixed(2) will be 30.57
+parsefloat it will only bring out the num in a string eg 23s it will only bring out 23
+we have keyword "return"
+to block a task
+-->

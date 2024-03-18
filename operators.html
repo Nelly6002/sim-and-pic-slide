@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #cal{
+        border: solid 1px black;
+        margin-top: 100px;
+        width: 200px;
+        height: 50px;
+    }
+</style>
+<body>
+    <input type="text" id="no1">&nbsp;&nbsp;&nbsp;
+    <input type="text" id="no2">&nbsp;&nbsp;&nbsp;
+    <button onclick="add()">+</button>
+    <button onclick="minus()">-</button>
+    <button onclick="divide()">/</button>
+    <button onclick="times()">*</button>
+    <h1 id="h1"></h1>
+    <div id="cal"></div>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+</body>
+</html>
+<script>
+    let no1 = document.getElementById('no1');
+    let no2 = document.getElementById('no2');
+    let h1 = document.getElementById('h1')
+    let result;
+    function add(){
+    result = Number(no1.value) + Number(no2.value)
+    h1.innerHTML = result
+    }
+    function minus(){
+    result = Number(no1.value) - Number(no2.value)
+    h1.innerHTML = result
+    }
+    function divide(){
+    result = Number(no1.value) / Number(no2.value)
+    h1.innerHTML = result
+    }
+    function times(){
+    result = Number(no1.value) * Number(no2.value)
+    h1.innerHTML = result
+    }
+</script>

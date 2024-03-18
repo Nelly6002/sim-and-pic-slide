@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sim.css">
+</head>
+<body>
+   
+ <div class="net">
+    <h2>Get your airtime here</h2>
+<br>    
+    <select class="network" name="" id="">
+        
+        <option value="">Chose your network</option>
+        <option onclick="mtn()" value="">MTN</option>
+        <option onclick="glo()" value="">GLO</option>
+        <option onclick="mobile()" value="">9MOBILE</option>
+        <option  onclick="airtle()" value="">AIRTLE</option>
+       </select>
+       <select class="network" name="" id="">
+        <option value="">Select amount</option>
+        <option onclick="one()" value="">#100</option>
+        <option onclick="two()" value="">#200</option>
+        <option onclick="five()" value="">#500</option>
+        <option onclick="th()" value="">#1000</option>
+        
+       </select>
+       <button onclick="generateNumber()">generateNumber</button><br><br>
+       <h3 id="dis"></h3>
+       <br>
+       <input type="text" name="" id="numberInput" class="inp" placeholder="insert pin">
+       <br>
+       <br>
+       <button onclick="validateNumber()">validateNumber</button>
+       <h3 id="disp"></h3>
+ </div>
+
+</body>
+</html>
+<script src="sim.js"></script>
